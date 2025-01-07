@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-check-double"></i> Task Manager</h1>
+        <div class="stats">
+            <span id="totalTasks">Total: 0</span>
+            <span id="completedTasks">Completed: 0</span>
+        </div>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <select id="prioritySelect">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button id="addTask"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+        <div class="filter-section">
+            <button id="showAll" class="filter-btn active">All</button>
+            <button id="showActive" class="filter-btn">Active</button>
+            <button id="showCompleted" class="filter-btn">Completed</button>
+            <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
